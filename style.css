@@ -88,15 +88,23 @@ button{font:inherit;cursor:pointer}
 .nav-toggle.open span::before{top:0;transform:rotate(45deg)}
 .nav-toggle.open span::after{top:0;transform:rotate(-45deg)}
 
+/* ---------- Sky band (home, top) ---------- */
+.sky-band{
+  position:relative;
+  height:380px;
+  overflow:hidden;
+  background:linear-gradient(180deg, var(--navy-700) 0%, var(--navy-800) 100%);
+}
+
 /* ---------- Hero ---------- */
 .hero{
   position:relative;
+  min-height:760px;
   display:flex;flex-direction:column;justify-content:center;
   background:
     radial-gradient(ellipse 900px 600px at 78% 38%, rgba(46,143,224,.25), transparent 60%),
     linear-gradient(160deg, var(--navy-950) 0%, var(--navy-900) 45%, var(--navy-800) 100%);
   overflow:hidden;
-  padding-top:78px;
 }
 .hero-orb{
   position:absolute;top:0;right:0;height:100%;width:62%;
@@ -157,7 +165,7 @@ button{font:inherit;cursor:pointer}
 .cloud-l,.cloud-r{position:absolute;top:0;height:100%;width:26%;pointer-events:none;opacity:.9}
 .cloud-l{left:0;background:url('assets/vision-cloud-l.png') left center/cover no-repeat}
 .cloud-r{right:0;background:url('assets/vision-cloud-r.png') right center/cover no-repeat}
-.hero .cloud-l,.hero .cloud-r{height:380px;width:55%;opacity:.75;z-index:1}
+.sky-band .cloud-l,.sky-band .cloud-r{height:100%;width:55%;opacity:.75}
 
 /* ---------- Generic content section ---------- */
 .section{padding:90px 0;position:relative}
