@@ -192,7 +192,7 @@ button{font:inherit;cursor:pointer}
 .signature .role{font-size:13px;color:var(--faint);letter-spacing:1px;margin-bottom:6px;font-family:'Poppins',sans-serif}
 .signature .name{font-size:22px;font-weight:700}
 .signature .name span{font-weight:300;color:var(--muted);font-size:16px;margin-left:10px;font-family:'Poppins',sans-serif}
-.sig-kr{font-family:'Nanum Pen Script',cursive;color:var(--teal);font-size:40px;line-height:1;margin-top:10px}
+.sig-kr{font-family:'Nanum Pen Script',cursive;color:rgba(27,200,184,.5);font-size:26px;line-height:1;margin-left:10px;vertical-align:middle}
 
 /* ---------- Vision pillars ---------- */
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.08)}
