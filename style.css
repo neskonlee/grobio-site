@@ -103,7 +103,7 @@ button{font:inherit;cursor:pointer}
   display:flex;flex-direction:column;justify-content:center;
   background:
     radial-gradient(ellipse 900px 600px at 78% 38%, rgba(46,143,224,.25), transparent 60%),
-    linear-gradient(160deg, var(--navy-950) 0%, var(--navy-900) 45%, var(--navy-800) 100%);
+    linear-gradient(180deg, #0a3568 0%, var(--navy-900) 50%, var(--navy-950) 100%);
   overflow:hidden;
 }
 .hero-orb{
