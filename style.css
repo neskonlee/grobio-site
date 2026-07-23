@@ -91,7 +91,6 @@ button{font:inherit;cursor:pointer}
 /* ---------- Hero ---------- */
 .hero{
   position:relative;
-  min-height:100vh;
   display:flex;flex-direction:column;justify-content:center;
   background:
     radial-gradient(ellipse 900px 600px at 78% 38%, rgba(46,143,224,.25), transparent 60%),
@@ -237,10 +236,11 @@ button{font:inherit;cursor:pointer}
   background:linear-gradient(180deg, var(--navy-950) 0%, var(--navy-800) 100%);
   padding:64px 0 30px;
   overflow:hidden;
-  border-top:1px solid rgba(255,255,255,.06);
+  min-height:380px;
+  display:flex;align-items:center;
 }
 .footer-water{
-  position:absolute;right:0;top:0;bottom:0;width:42%;
+  position:absolute;right:0;top:0;height:380px;width:55%;
   background:url('assets/footer-water.png') right center/cover no-repeat;
   opacity:.85;pointer-events:none;
 }
