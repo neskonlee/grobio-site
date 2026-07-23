@@ -122,10 +122,25 @@ button{font:inherit;cursor:pointer}
 
 .hero-pillars{
   position:relative;z-index:2;
-  width:min(720px,92vw);
-  margin:44px auto 40px;
+  width:100%;
+  display:flex;align-items:center;justify-content:center;
+  gap:0;
+  margin:48px 0 40px;
+  padding:0 24px;
 }
-.hero-pillars img{width:100%;height:auto;display:block}
+.hp-item{
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;
+  padding:0 36px;
+}
+.hp-icon{
+  width:54px;height:54px;border-radius:50%;
+  border:1px solid rgba(27,200,184,.4);background:rgba(27,200,184,.07);
+  display:flex;align-items:center;justify-content:center;color:var(--teal);
+}
+.hp-icon svg{width:24px;height:24px}
+.hp-label{font-family:'Poppins',sans-serif;font-size:16px;letter-spacing:.5px;color:var(--white)}
+.hp-sub{font-family:'Poppins',sans-serif;font-size:12px;color:var(--faint);letter-spacing:.3px}
+.hp-divider{width:1px;height:44px;background:rgba(255,255,255,.15)}
 
 .scroll-cue{
   position:relative;z-index:2;
@@ -327,6 +342,8 @@ button{font:inherit;cursor:pointer}
   .pillar{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
   .contact-grid{grid-template-columns:1fr}
   .hero-orb{width:100%;opacity:.55}
+  .hp-item{padding:0 20px}
+  .hp-sub{display:none}
 }
 
 @media (max-width:720px){
@@ -350,4 +367,9 @@ button{font:inherit;cursor:pointer}
   .hero-mark{width:78vw}
   .card{padding:26px 22px}
   .contact-card{padding:26px}
+  .hp-item{padding:0 12px}
+  .hp-icon{width:44px;height:44px}
+  .hp-icon svg{width:20px;height:20px}
+  .hp-label{font-size:13px}
+  .hp-divider{height:34px}
 }
