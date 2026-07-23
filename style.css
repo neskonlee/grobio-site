@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Nanum+Pen+Script&display=swap');
 
 :root{
   --navy-950:#00081a;
@@ -192,6 +192,7 @@ button{font:inherit;cursor:pointer}
 .signature .role{font-size:13px;color:var(--faint);letter-spacing:1px;margin-bottom:6px;font-family:'Poppins',sans-serif}
 .signature .name{font-size:22px;font-weight:700}
 .signature .name span{font-weight:300;color:var(--muted);font-size:16px;margin-left:10px;font-family:'Poppins',sans-serif}
+.sig-kr{font-family:'Nanum Pen Script',cursive;color:var(--teal);font-size:40px;line-height:1;margin-top:10px}
 
 /* ---------- Vision pillars ---------- */
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.08)}
