@@ -220,12 +220,10 @@ button{font:inherit;cursor:pointer}
 .tech-item:last-child{border-bottom:none}
 .tech-item--goal{padding-left:28px;border-left:2px solid var(--teal);border-bottom:none}
 
-/* ---------- Company photo ---------- */
-.company-photo-section{width:100%;line-height:0}
-.company-photo{width:100%;max-height:480px;object-fit:cover;display:block}
-
 /* ---------- Contact page ---------- */
 .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
+.contact-right{display:flex;flex-direction:column;gap:24px}
+.company-photo{width:100%;border-radius:12px;object-fit:cover;max-height:220px;display:block}
 .contact-lead p{color:var(--muted);font-size:16px;margin-bottom:18px;max-width:520px}
 .contact-card{
   background:linear-gradient(160deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
