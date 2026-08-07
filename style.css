@@ -223,7 +223,7 @@ button{font:inherit;cursor:pointer}
 /* ---------- Contact page ---------- */
 .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
 .contact-left{display:flex;flex-direction:column}
-.contact-photo-col{display:flex;align-items:center}
+.contact-photo-col{display:flex;align-items:flex-start;padding-top:20%}
 .company-photo{width:100%;height:auto;display:block;border-radius:12px}
 .contact-lead p{color:var(--muted);font-size:16px;margin-bottom:18px;max-width:520px}
 .contact-card{
