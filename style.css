@@ -222,8 +222,9 @@ button{font:inherit;cursor:pointer}
 
 /* ---------- Contact page ---------- */
 .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
-.contact-right{display:flex;flex-direction:column;gap:24px}
-.company-photo{width:100%;border-radius:12px;display:block;height:auto}
+.contact-left{display:flex;flex-direction:column}
+.contact-photo-col{display:flex;align-items:center}
+.company-photo{width:100%;height:auto;display:block;border-radius:12px}
 .contact-lead p{color:var(--muted);font-size:16px;margin-bottom:18px;max-width:520px}
 .contact-card{
   background:linear-gradient(160deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
