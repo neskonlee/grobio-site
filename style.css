@@ -220,6 +220,10 @@ html[data-lang="kr"] .lang-kr{display:inline}
 html[data-lang="kr"] .lang-en{display:none}
 
 .lang-globe{width:14px;height:14px;color:var(--white);flex-shrink:0}
+
+/* Korean-mode layout overrides */
+html[data-lang="kr"] .ceo-layout{grid-template-columns:1fr}
+html[data-lang="kr"] .page-hero .sub{max-width:780px;font-size:15px}
 .lang-switch{display:flex;align-items:center;gap:4px;margin-left:20px;flex-shrink:0}
 .lang-btn{
   background:none;border:none;color:var(--muted);cursor:pointer;
