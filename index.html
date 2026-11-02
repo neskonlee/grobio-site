@@ -14,12 +14,17 @@
   <div class="wrap">
     <a href="index.html" class="brand"><img src="assets/logo-white.png" alt="GRO Bio"></a>
     <nav class="nav-links">
-      <a href="index.html" class="active eng">MAIN</a>
-      <a href="ceo.html" class="eng">CEO MESSAGE</a>
-      <a href="vision.html" class="eng">OUR VISION</a>
-      <a href="technology.html" class="eng">TECHNOLOGY</a>
-      <a href="contact.html" class="eng">CONTACT US</a>
+      <a href="index.html" class="active eng"><span class="lang-en">MAIN</span><span class="lang-kr">메인</span></a>
+      <a href="ceo.html" class="eng"><span class="lang-en">CEO MESSAGE</span><span class="lang-kr">CEO 인사</span></a>
+      <a href="vision.html" class="eng"><span class="lang-en">OUR VISION</span><span class="lang-kr">비전</span></a>
+      <a href="technology.html" class="eng"><span class="lang-en">TECHNOLOGY</span><span class="lang-kr">기술</span></a>
+      <a href="contact.html" class="eng"><span class="lang-en">CONTACT US</span><span class="lang-kr">문의하기</span></a>
     </nav>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="kr" onclick="setLang('kr')">한글</button>
+    </div>
     <button class="nav-toggle" aria-label="Open menu"><span></span></button>
   </div>
 </header>
@@ -35,7 +40,7 @@
     <img class="hero-mark" src="assets/logo-white.png" alt="GRO Bio">
     <p class="hero-tagline eng">science for the future of beauty</p>
     <div class="hero-rule"></div>
-    <p class="hero-desc">GRO Bio is a <strong>cosmetics company</strong><br>applying future technology to beauty.</p>
+    <p class="hero-desc"><span class="lang-en">GRO Bio is a <strong>cosmetics company</strong><br>applying future technology to beauty.</span><span class="lang-kr">GRO Bio는 차세대 기술을 아름다움에<br>접목하는 회사입니다.</span></p>
   </div>
   <div class="hero-pillars"><img src="assets/pillars-graphic.png" alt="science, beauty, future"></div>
 </section>

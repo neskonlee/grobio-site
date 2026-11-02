@@ -214,6 +214,20 @@ button{font:inherit;cursor:pointer}
 .vision-statement .wordmark{font-family:'Poppins',sans-serif;font-weight:300;font-size:clamp(22px,3.4vw,34px);color:var(--white)}
 .vision-statement .tag{font-family:'Poppins',sans-serif;font-size:13px;letter-spacing:3px;color:var(--faint);margin-top:8px;text-transform:uppercase}
 
+/* ---------- Language toggle ---------- */
+.lang-kr{display:none}
+html[data-lang="kr"] .lang-kr{display:inline}
+html[data-lang="kr"] .lang-en{display:none}
+
+.lang-switch{display:flex;align-items:center;gap:4px;margin-left:20px;flex-shrink:0}
+.lang-btn{
+  background:none;border:none;color:var(--muted);cursor:pointer;
+  font-size:12px;font-family:'Poppins',sans-serif;padding:4px 2px;
+  letter-spacing:.3px;transition:color .2s;
+}
+.lang-btn:hover,.lang-btn.active{color:var(--white);font-weight:600}
+.lang-sep{color:var(--faint);font-size:11px}
+
 /* ---------- Technology page ---------- */
 .tech-article{max-width:720px}
 .tech-item{padding:48px 0;border-bottom:1px solid rgba(255,255,255,.08)}
