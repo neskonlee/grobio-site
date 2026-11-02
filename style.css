@@ -219,6 +219,7 @@ button{font:inherit;cursor:pointer}
 html[data-lang="kr"] .lang-kr{display:inline}
 html[data-lang="kr"] .lang-en{display:none}
 
+.lang-globe{width:14px;height:14px;color:var(--white);flex-shrink:0}
 .lang-switch{display:flex;align-items:center;gap:4px;margin-left:20px;flex-shrink:0}
 .lang-btn{
   background:none;border:none;color:var(--muted);cursor:pointer;
