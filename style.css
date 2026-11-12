@@ -115,6 +115,7 @@ button{font:inherit;cursor:pointer}
   opacity:.95;
   pointer-events:none;
   z-index:0;
+  clip-path:inset(0 0 30% 0);
 }
 .hero-inner{position:relative;z-index:2;padding:90px 0 60px}
 .hero-mark{width:min(430px,72vw);margin-bottom:26px}
