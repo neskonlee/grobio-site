@@ -134,7 +134,7 @@ button{font:inherit;cursor:pointer}
   width:min(640px,90vw);
   margin:48px auto 40px;
 }
-.hero-pillars img{width:100%;height:auto;display:block}
+.hero-pillars img{width:100%;height:auto;display:block;clip-path:inset(52px 0 0 0);margin-top:-52px}
 
 .section-eyebrow{
   font-family:'Poppins',sans-serif;font-size:12px;letter-spacing:4px;color:var(--teal);
