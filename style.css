@@ -115,7 +115,6 @@ button{font:inherit;cursor:pointer}
   opacity:.95;
   pointer-events:none;
   z-index:0;
-  clip-path:inset(0 0 30% 0);
 }
 .hero-inner{position:relative;z-index:2;padding:90px 0 60px}
 .hero-mark{width:min(430px,72vw);margin-bottom:26px}
@@ -307,7 +306,7 @@ html[data-lang="kr"] .page-hero .sub{max-width:780px;font-size:15px}
   .contact-photo-col{grid-column:1;grid-row:2;padding-top:0;display:flex;justify-content:center}
   .contact-photo-col .company-photo{width:67%}
   .contact-grid>.contact-card{grid-column:1;grid-row:3}
-  .hero-orb{width:100%;opacity:.55}
+  .hero-orb{width:80%;opacity:.55;background-position:right center}
 }
 
 @media (max-width:720px){
