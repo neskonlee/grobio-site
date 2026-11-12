@@ -119,9 +119,10 @@ button{font:inherit;cursor:pointer}
 .hero-inner{position:relative;z-index:2;padding:90px 0 60px}
 .hero-mark{width:min(430px,72vw);margin-bottom:26px}
 .hero-tagline{
-  font-family:'Poppins',sans-serif;font-weight:300;font-size:clamp(16px,2.4vw,22px);
-  letter-spacing:1px;color:var(--ice);margin-bottom:26px;
+  font-family:'Poppins',sans-serif;font-weight:400;font-size:clamp(18px,2.6vw,24px);
+  letter-spacing:1px;color:var(--ice);margin-bottom:10px;
 }
+.hero-tagline--rd{font-weight:600;margin-top:32px}
 .hero-rule{width:56px;height:2px;background:var(--teal);margin-bottom:26px}
 .hero-desc{
   font-size:clamp(15px,1.8vw,18px);color:var(--muted);font-weight:400;max-width:480px;
