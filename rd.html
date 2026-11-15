@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R&amp;D | GRO Bio</title>
+<meta name="description" content="GRO Bio conducts R&D in collaboration with Yonsei University and government-funded programs.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+/* R&D 페이지 전용 추가 스타일 */
+.rd-collab-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px}
+.rd-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:28px;transition:.2s}
+.rd-card:hover{border-color:rgba(27,200,184,.35);background:rgba(27,200,184,.04)}
+.rd-card .rd-tag{display:inline-block;background:rgba(27,200,184,.15);color:#1bc8b8;font-size:11px;font-family:'Poppins',sans-serif;letter-spacing:.5px;padding:3px 10px;border-radius:20px;margin-bottom:12px}
+.rd-card h4{font-size:16px;font-weight:600;margin-bottom:8px}
+.rd-card p{font-size:14px;color:rgba(255,255,255,.68);line-height:1.75}
+.badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.rd-badge{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(27,200,184,.35);border-radius:6px;padding:6px 14px;font-size:13px;color:#cfe6ff}
+
+.paper-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:32px}
+.paper-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden}
+.paper-top{background:rgba(27,200,184,.08);border-bottom:1px solid rgba(27,200,184,.2);padding:18px 22px}
+.paper-top .plabel{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#1bc8b8;margin-bottom:6px}
+.paper-top .ptitle{font-family:'Poppins',sans-serif;font-size:12px;color:#cfe6ff;line-height:1.65;font-style:italic}
+.paper-top .pmeta{font-family:'Poppins',sans-serif;font-size:11px;color:rgba(255,255,255,.4);margin-top:5px}
+.paper-body{padding:20px 22px;font-size:13px;color:rgba(255,255,255,.68);line-height:1.8}
+
+.pipeline-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.07);border-radius:12px;overflow:hidden;margin-top:32px}
+.pipe-step{background:#00081a;padding:28px 20px;text-align:center}
+.pipe-step .pnum{font-family:'Poppins',sans-serif;font-size:11px;color:#1bc8b8;letter-spacing:2px;margin-bottom:10px}
+.pipe-step h4{font-size:14px;font-weight:600;margin-bottom:8px}
+.pipe-step p{font-size:12px;color:rgba(255,255,255,.6)}
+.pipe-step.on{background:rgba(27,200,184,.08)}
+
+@media(max-width:900px){
+  .rd-collab-grid{grid-template-columns:1fr}
+  .paper-cards{grid-template-columns:1fr}
+  .pipeline-row{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .pipeline-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header solid">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/logo-white.png" alt="GRO Bio"></a>
+    <nav class="nav-links">
+      <a href="index.html" class="eng"><span class="lang-en">MAIN</span><span class="lang-kr">메인</span></a>
+      <a href="ceo.html" class="eng"><span class="lang-en">CEO MESSAGE</span><span class="lang-kr">CEO 인사</span></a>
+      <a href="vision.html" class="eng"><span class="lang-en">OUR VISION</span><span class="lang-kr">비전</span></a>
+      <a href="technology.html" class="eng"><span class="lang-en">TECHNOLOGY</span><span class="lang-kr">기술</span></a>
+      <a href="rd.html" class="active eng"><span class="lang-en">R&amp;D</span><span class="lang-kr">R&amp;D</span></a>
+      <a href="contact.html" class="eng"><span class="lang-en">CONTACT US</span><span class="lang-kr">문의하기</span></a>
+    </nav>
+    <div class="lang-switch">
+      <svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="kr" onclick="setLang('kr')">한국어</button>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="cloud-l"></div>
+  <div class="cloud-r"></div>
+  <div class="wrap">
+    <div class="section-eyebrow">R&amp;D</div>
+    <h1><span class="lang-en">Built on <b>Research</b></span><span class="lang-kr">연구 개발 중심의 <b>기업</b></span></h1>
+    <div class="page-hero-rule"></div>
+  </div>
+</section>
+
+<!-- 협력 기관 -->
+<section class="section">
+  <div class="wrap">
+    <div class="tech-article">
+      <div class="tech-item">
+        <h2 class="section-title"><span class="lang-en">Research Partnerships</span><span class="lang-kr">연구 협력 기반</span></h2>
+        <div class="rd-collab-grid">
+          <div class="rd-card">
+            <span class="rd-tag lang-kr">산학협력</span><span class="rd-tag lang-en">Academic</span>
+            <h4 class="lang-kr">연세대학교</h4>
+            <h4 class="lang-en">Yonsei University</h4>
+            <p class="lang-kr">피부 재생 및 항노화 분야 연구진과 협력하여 세포 생물학적 근거를 갖춘 소재 연구를 진행합니다. 국내 유명 연구자들과 함께 과학적 근거 기반의 성분 개발을 추구합니다.</p>
+            <p class="lang-en">Collaborating with leading researchers in skin regeneration and anti-aging science to develop ingredients grounded in cellular biology. Evidence-based formulation is our standard.</p>
+          </div>
+          <div class="rd-card">
+            <span class="rd-tag lang-kr">국가 과제</span><span class="rd-tag lang-en">Gov. R&amp;D</span>
+            <h4 class="lang-kr">정부 R&amp;D 사업</h4>
+            <h4 class="lang-en">Government R&amp;D Program</h4>
+            <p class="lang-kr">중소벤처기업부·산업통상자원부 등의 정부 R&amp;D 과제를 수행하며, 화장품 원료 개발 및 효능 평가 연구를 이어가고 있습니다.</p>
+            <p class="lang-en">Executing government R&amp;D programs in partnership with MOTIE and MSS, focusing on cosmetic ingredient development and efficacy evaluation.</p>
+          </div>
+        </div>
+        <div class="badge-row">
+          <span class="rd-badge"><span class="lang-kr">국가 R&amp;D 과제</span><span class="lang-en">National R&amp;D</span></span>
+          <span class="rd-badge"><span class="lang-kr">연세대학교 산학협력</span><span class="lang-en">Yonsei University</span></span>
+          <span class="rd-badge"><span class="lang-kr">임상 근거 기반</span><span class="lang-en">Evidence-Based</span></span>
+        </div>
+      </div>
+
+      <!-- 핵심 소재 -->
+      <div class="tech-item">
+        <h2 class="section-title"><span class="lang-en">Research-Backed Ingredients</span><span class="lang-kr">핵심 연구 소재</span></h2>
+        <div class="ceo-body">
+          <p><span class="lang-en">Every ingredient GRO Bio selects is backed by peer-reviewed publications. We validate scientific evidence for hair loss improvement and wrinkle reduction, then translate it into cosmetic formulations.</span><span class="lang-kr">GRO Bio가 선택한 소재는 국제 학술지에 게재된 연구 결과를 근거로 합니다. 탈모 개선과 주름 완화에 대한 과학적 가능성을 검증하고, 이를 화장품에 구현합니다.</span></p>
+        </div>
+        <div class="paper-cards">
+
+          <div class="paper-card">
+            <div class="paper-top">
+              <p class="plabel">Published Research</p>
+              <p class="ptitle">"Insulin-like growth factor-1 signaling regulates the hair follicle stem cell niche during morphogenesis and regeneration"</p>
+              <p class="pmeta">Lim X. et al. — <em>Development</em>, 2016</p>
+            </div>
+            <div class="paper-body">
+              <span class="lang-kr">모낭 줄기세포 환경을 조절하는 신호 경로가 모발 형성과 재생 과정에 핵심적으로 작용한다는 연구 결과입니다.</span>
+              <span class="lang-en">Key signaling pathways regulate the follicle stem cell niche during hair morphogenesis and regeneration.</span>
+            </div>
+          </div>
+
+          <div class="paper-card">
+            <div class="paper-top">
+              <p class="plabel">Published Research</p>
+              <p class="ptitle">"Thymosin beta4 activates integrin-linked kinase and promotes cardiac cell migration, survival and cardiac repair"</p>
+              <p class="pmeta">Philp D. et al. — <em>Ann N Y Acad Sci</em>, 2012</p>
+            </div>
+            <div class="paper-body">
+              <span class="lang-kr">세포 이동과 생존을 촉진하고 염증 반응을 조절하는 기전이 조직 재생에 기여한다는 연구 결과입니다.</span>
+              <span class="lang-en">This mechanism promotes cell migration, survival, and modulates inflammation — contributing to tissue regeneration.</span>
+            </div>
+          </div>
+
+          <div class="paper-card">
+            <div class="paper-top">
+              <p class="plabel">Published Research</p>
+              <p class="ptitle">"Topical palmitoyl pentapeptide provides improvement in photoaged human facial skin"</p>
+              <p class="pmeta">Robinson L.R. et al. — <em>Int J Cosmet Sci</em>, 2005</p>
+            </div>
+            <div class="paper-body">
+              <span class="lang-kr">광노화된 얼굴 피부에 도포 시 주름 개선 효과가 임상적으로 확인된 연구입니다.</span>
+              <span class="lang-en">A clinical study confirming visible wrinkle improvement on photoaged facial skin.</span>
+            </div>
+          </div>
+
+          <div class="paper-card">
+            <div class="paper-top">
+              <p class="plabel">Published Research</p>
+              <p class="ptitle">"2-Deoxy-D-ribose induces angiogenesis in vitro and in vivo: implications for hair follicle vascularization"</p>
+              <p class="pmeta">English D. et al. — <em>Lab Invest</em>, 2001</p>
+            </div>
+            <div class="paper-body">
+              <span class="lang-kr">시험관 및 생체 내에서 혈관 신생을 유도하는 효과가 확인된 연구입니다. 피부와 탈모 개선에 효과적인 성분입니다.</span>
+              <span class="lang-en">Research confirming angiogenic activity both in vitro and in vivo. An effective ingredient for skin and hair loss improvement.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 파이프라인 -->
+      <div class="tech-item">
+        <h2 class="section-title"><span class="lang-en">R&amp;D Pipeline</span><span class="lang-kr">연구 개발 단계</span></h2>
+        <div class="pipeline-row">
+          <div class="pipe-step">
+            <p class="pnum">01</p>
+            <h4 class="lang-kr">소재 발굴</h4>
+            <h4 class="lang-en">Discovery</h4>
+            <p class="lang-kr">문헌 연구 및 대학 협력을 통한 후보 소재 선별</p>
+            <p class="lang-en">Literature review &amp; candidate selection</p>
+          </div>
+          <div class="pipe-step on">
+            <p class="pnum">02</p>
+            <h4 class="lang-kr">효능 검증</h4>
+            <h4 class="lang-en">Validation</h4>
+            <p class="lang-kr">세포 실험 및 인체적용시험을 통한 효능 확인</p>
+            <p class="lang-en">In vitro testing &amp; human application trials</p>
+          </div>
+          <div class="pipe-step">
+            <p class="pnum">03</p>
+            <h4 class="lang-kr">조성 개발</h4>
+            <h4 class="lang-en">Formulation</h4>
+            <p class="lang-kr">화장품 원료 배합 최적화 및 안정성 테스트</p>
+            <p class="lang-en">Formulation optimization &amp; stability testing</p>
+          </div>
+          <div class="pipe-step">
+            <p class="pnum">04</p>
+            <h4 class="lang-kr">제품 출시</h4>
+            <h4 class="lang-en">Launch</h4>
+            <p class="lang-kr">식약처 인증 후 시장 출시</p>
+            <p class="lang-en">MFDS approval &amp; market launch</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-water"></div>
+  <div class="wrap footer-inner">
+    <img src="assets/logo-white.png" alt="GRO Bio">
+    <div class="tag">cosmetics</div>
+    <div class="footer-rule"></div>
+    <div class="copyright">&copy; 2026 GRO Bio. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
